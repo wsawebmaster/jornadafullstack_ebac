@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import VideoFooter from "./components/footer/VideoFooter";
 import "./video.css"
 
 function Video() {
@@ -25,9 +26,9 @@ function Video() {
         onClick={handdleStart}
         loop
         src="https://aws-br-cdn.kwai.net/upic/2021/08/16/03/BMjAyMTA4MTYwMzU0MTFfMTUwMDAwOTYyNDI0ODIzXzE1MDA2MDE1MzE4Mzg2M18yXzM=_b_Bd0118c26b420e20fbc8ecd4682d00bf6.mp4"
-      >
-
-      </video>
+      ></video>
+      {/* Sidebar */}
+      <VideoFooter />
     </div>
   );
 }
